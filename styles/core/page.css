@@ -1,0 +1,9 @@
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(var(--color-rgb-gray), 0.64);
+  background-color: var(--color-tertiary-gray-lighter);
+}

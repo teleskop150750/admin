@@ -1,0 +1,24 @@
+.header {
+  padding: 1rem;
+}
+
+.header__inner {
+  --color-tertiary-gray: #efefef;
+  display: flex;
+  justify-content: center;
+  padding: 0.6em;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: var(--color-primary-blue);
+  background-color: var(--color-tertiary-gray);
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-primary);
+}
+
+.header__link {
+  user-select: none;
+}
+
+.header__link::before {
+  content: '';
+}

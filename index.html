@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Админ-панель</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="core.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="page__body">
+  <header class="header page__header">
+    <div class="header__inner">
+      <a class="header__link" href="#">Luxury Wacthes</a>
+    </div>
+  </header>
+
+  <div class="content">
+    <aside class="aside page__aside">
+      <nav class="nav aside__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active nav__link--home" href="index.html">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#home"></use>
+              </svg>
+              Главная
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--orders" href="order.html">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#cart"></use>
+              </svg>
+              Заказы
+            </a>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link nav__link--treeview nav__link--products" href="">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#product"></use>
+              </svg>
+              Товары
+              <svg class="nav__item-arrow">
+                <use xlink:href="images/sprite-aside.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="nav__submenu">
+              <ul class="nav__submenu-inner">
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Список товаров</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Добавить товаров</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link nav__link--treeview nav__link--menu" href="">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#menu"></use>
+              </svg>
+              Категории
+              <svg class="nav__item-arrow">
+                <use xlink:href="images/sprite-aside.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="nav__submenu">
+              <ul class="nav__submenu-inner">
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Список категорий</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Добавить категорию</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--cache" href="">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#cache"></use>
+              </svg>
+              Кэширование
+            </a>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link nav__link--treeview nav__link--users" href="">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#users"></use>
+              </svg>
+              Пользователи
+              <svg class="nav__item-arrow">
+                <use xlink:href="images/sprite-aside.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="nav__submenu">
+              <ul class="nav__submenu-inner">
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Список пользователей</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Добавить пользователя</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link nav__link--treeview nav__link--currencies" href="">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#currencies"></use>
+              </svg>
+              Валюты
+              <svg class="nav__item-arrow">
+                <use xlink:href="images/sprite-aside.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="nav__submenu">
+              <ul class="nav__submenu-inner">
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">
+                    Список валют
+                  </a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Добавить валюту</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link nav__link--treeview nav__link--filters" href="">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#filters"></use>
+              </svg>
+              Фильтры
+              <svg class="nav__item-arrow">
+                <use xlink:href="images/sprite-aside.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="nav__submenu">
+              <ul class="nav__submenu-inner">
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Список групп</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Добавить группу</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Список фильтров</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Добавить фильтр</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main page__main">
+      <h1 class="main__title">Панель управления</h1>
+      <section class="panels main__panels">
+        <h2 class="sr-only">Панель быстрого доступа</h2>
+        <article class="panel panels__panel">
+          <h3 class="panel__name">Новые заказы</h3>
+          <span class="panel__count">3</span>
+          <a class="panel__link" href="order.html">Все заказы</a>
+        </article>
+        <article class="panel panels__panel">
+          <h3 class="panel__name">Товары</h3>
+          <span class="panel__count">2</span>
+          <a class="panel__link" href="">Все товары</a>
+        </article>
+        <article class="panel panels__panel">
+          <h3 class="panel__name">Пользователи</h3>
+          <span class="panel__count">134</span>
+          <a class="panel__link" href="">Все пользователи</a>
+        </article>
+        <article class="panel panels__panel">
+          <h3 class="panel__name">Категории</h3>
+          <span class="panel__count">22</span>
+          <a class="panel__link" href="">Все категории</a>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer page__footer">
+    <p class="footer__copy">© 2021 ГПОУ ТО "Донской колледж информационных технологий" Куликов Денис 4‑П‑1</p>
+  </footer>
+  <script src="core.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+:root {
+  --color-rgb-white: 255, 255, 255;
+  --color-rgb-blue: 174, 174, 192;
+  --color-rgb-gray: 29, 28, 26;
+  --color-rgb-gray: 29, 28, 26;
+  --color-primary-blue: #4162f0;
+  --color-tertiary-white: #ffffff;
+  --color-tertiary-gray-lighter: #f4f4f6;
+  --color-tertiary-gray: #eaeaea;
+  --color-tertiary-gray: #efefef;
+  --color-tertiary-gray-dark: #e2e2e2;
+  --color-tertiary-gray-darker: #dadada;
+  --color-tertiary-gray-ultra-dark: #c4c4c4;
+  --color-primary-black: #1d1c1a;
+  --border-radius-base: 4px;
+  --field-box-shadow-base:
+    -1px -1px 3px rgba(var(--color-rgb-white), 0.25),
+    1px 1px 3px rgba(var(--color-rgb-blue), 0.4),
+    4px 4px 8px rgba(var(--color-rgb-blue), 0.4),
+    -4px -4px 12px var(--color-tertiary-white);
+  --box-shadow-primary:
+    -1px -1px 3px rgba(var(--color-rgb-white), 0.25),
+    1px 1px 3px rgba(var(--color-rgb-blue), 0.4),
+    4px 4px 8px rgba(var(--color-rgb-blue), 0.4),
+    -4px -4px 12px var(--color-tertiary-white);
+  --box-shadow-secondary:
+    -4px -4px 12px #ffffff,
+    4px 4px 8px rgba(var(--color-rgb-blue), 0.4),
+    1px 1px 3px rgba(var(--color-rgb-blue), 0.4),
+    -1px -1px 3px rgba(var(--color-rgb-white), 0.25);
+}

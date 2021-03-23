@@ -1,0 +1,13 @@
+.main {
+  --color-tertiary-gray: #efefef;
+  padding: 2rem 1rem;
+  color: currentColor;
+  background-color: var(--color-tertiary-gray);
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-primary);
+}
+
+.main__title {
+  margin: 0;
+  margin-bottom: 1em;
+}

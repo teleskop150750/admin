@@ -1,0 +1,33 @@
+.table {
+  display: grid;
+}
+
+.table__inner {
+  overflow-x: auto;
+}
+
+.table table {
+  width: 100%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.table tr,
+.table th,
+.table td {
+  white-space: nowrap;
+  border-color: var(--color-primary-black);
+  border-style: solid;
+}
+
+.table th,
+.table td {
+  padding: 0.5em;
+  border-width: 0 1px;
+}
+
+.table tr {
+  border-width: 1px 0;
+}

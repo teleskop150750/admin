@@ -1,0 +1,45 @@
+.panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.panel {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  padding: 1rem;
+  font-size: 1rem;
+  color: rgba(var(--color-rgb-gray), 0.64);
+  background-color: var(--color-tertiary-gray);
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-primary);
+  box-shadow: var(--box-shadow-secondary);
+}
+
+.panel__name {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 1.4em;
+  line-height: 1;
+}
+
+.panel__count {
+  display: block;
+  margin-bottom: 0.2em;
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 1;
+  color: #d7d7d7;
+}
+
+.panel__link {
+  position: relative;
+  z-index: 1;
+  color: var(--color-primary-blue);
+}
+
+.panel__link:focus,
+.panel__link:hover {
+  text-decoration: underline;
+}
