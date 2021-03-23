@@ -1,11 +1,3 @@
 @import 'styles/pagination.css';
 @import 'styles/table.css';
 @import 'styles/buttons.css';
-
-.details__title {
-  padding: 0 1rem;
-}
-
-.details table {
-  width: 100%;
-}

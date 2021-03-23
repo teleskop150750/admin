@@ -8,7 +8,7 @@
   <title>Админ-панель</title>
   <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="core.css">
-  <link rel="stylesheet" href="order.css">
+  <link rel="stylesheet" href="product.css">
 </head>
 
 <body class="page__body">
@@ -31,7 +31,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--active nav__link--orders" href="order.html">
+            <a class="nav__link nav__link--orders" href="order.html">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#cart"></use>
               </svg>
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--products" href="">
+            <button class="nav__link nav__link--active nav__link--treeview nav__link--products" href="">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#product"></use>
               </svg>
@@ -172,25 +172,23 @@
               <thead>
                 <tr>
                   <th>ID</th>
-                  <th>Покупатель</th>
+                  <th>Категория</th>
+                  <th>Наименование</th>
+                  <th>Цена</th>
                   <th>Статус</th>
-                  <th>Сумма</th>
-                  <th>Дата создания</th>
-                  <th>Дата изменения</th>
                   <th>Действия</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>8</td>
-                  <td>teleskop150750lg</td>
-                  <td>Новый</td>
-                  <td>21900.00 RU</td>
-                  <td>2021-01-10 17:59:54</td>
-                  <td></td>
+                  <td>3</td>
+                  <td>Casio</td>
+                  <td>Casio GA-1000-1AER</td>
+                  <td>400</td>
+                  <td>On</td>
                   <td>
                     <div class="table__buttons">
-                      <a class="table__button table__button--open" href="order-view.html">
+                      <a class="table__button table__button--open" href="product-edit.html">
                         <svg class="table__button-icon">
                           <use xlink:href="images/sprite-table.svg#eye"></use>
                         </svg>
@@ -203,16 +201,141 @@
                     </div>
                   </td>
                 </tr>
-                <tr class="">
+                <tr>
+                  <td>2</td>
+                  <td>Casio</td>
+                  <td>Casio MQ-24-7BUL</td>
+                  <td>70</td>
+                  <td>On</td>
+                  <td>
+                    <div class="table__buttons">
+                      <a class="table__button table__button--open" href="product-edit.html">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#eye"></use>
+                        </svg>
+                      </a>
+                      <button class="table__button table__button--delete">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#delete"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Casio</td>
+                  <td>Casio MRP-700-1AVEF</td>
+                  <td>300</td>
+                  <td>On</td>
+                  <td>
+                    <div class="table__buttons">
+                      <a class="table__button table__button--open" href="product-edit.html">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#eye"></use>
+                        </svg>
+                      </a>
+                      <button class="table__button table__button--delete">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#delete"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Citizen</td>
+                  <td>Citizen AT0696-59E</td>
+                  <td>350</td>
+                  <td>On</td>
+                  <td>
+                    <div class="table__buttons">
+                      <a class="table__button table__button--open" href="product-edit.html">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#eye"></use>
+                        </svg>
+                      </a>
+                      <button class="table__button table__button--delete">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#delete"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Citizen</td>
+                  <td>Citizen BJ2111-08E</td>
+                  <td>500</td>
+                  <td>On</td>
+                  <td>
+                    <div class="table__buttons">
+                      <a class="table__button table__button--open" href="product-edit.html">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#eye"></use>
+                        </svg>
+                      </a>
+                      <button class="table__button table__button--delete">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#delete"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Механические</td>
+                  <td>Citizen JP1010-00E</td>
+                  <td>400</td>
+                  <td>On</td>
+                  <td>
+                    <div class="table__buttons">
+                      <a class="table__button table__button--open" href="product-edit.html">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#eye"></use>
+                        </svg>
+                      </a>
+                      <button class="table__button table__button--delete">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#delete"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Casio</td>
+                  <td>Q&amp;Q Q956J302Y</td>
+                  <td>20</td>
+                  <td>On</td>
+                  <td>
+                    <div class="table__buttons">
+                      <a class="table__button table__button--open" href="product-edit.html">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#eye"></use>
+                        </svg>
+                      </a>
+                      <button class="table__button table__button--delete">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#delete"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
                   <td>9</td>
-                  <td>teleskop150750lg</td>
-                  <td>Новый</td>
-                  <td>57670.00 RU</td>
-                  <td>2021-01-10 18:02:21</td>
-                  <td></td>
+                  <td>Casio</td>
+                  <td>Royal London 20034-02</td>
+                  <td>110</td>
+                  <td>On</td>
                   <td>
                     <div class="table__buttons">
-                      <a class="table__button table__button--open" href="order-view.html">
+                      <a class="table__button table__button--open" href="product-edit.html">
                         <svg class="table__button-icon">
                           <use xlink:href="images/sprite-table.svg#eye"></use>
                         </svg>
@@ -225,16 +348,36 @@
                     </div>
                   </td>
                 </tr>
-                <tr class="">
-                  <td>10</td>
-                  <td>teleskop150750lg</td>
-                  <td>Новый</td>
-                  <td>6570.00 RU</td>
-                  <td>2021-01-10 18:06:28</td>
-                  <td></td>
+                <tr>
+                  <td>8</td>
+                  <td>Casio</td>
+                  <td>Royal London 41040-01</td>
+                  <td>90</td>
+                  <td>On</td>
                   <td>
                     <div class="table__buttons">
-                      <a class="table__button table__button--open" href="order-view.html">
+                      <a class="table__button table__button--open" href="product-edit.html">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#eye"></use>
+                        </svg>
+                      </a>
+                      <button class="table__button table__button--delete">
+                        <svg class="table__button-icon">
+                          <use xlink:href="images/sprite-table.svg#delete"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Casio</td>
+                  <td>Royal London 41156-02</td>
+                  <td>100</td>
+                  <td>On</td>
+                  <td>
+                    <div class="table__buttons">
+                      <a class="table__button table__button--open" href="product-edit.html">
                         <svg class="table__button-icon">
                           <use xlink:href="images/sprite-table.svg#eye"></use>
                         </svg>

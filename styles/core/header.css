@@ -10,7 +10,7 @@
   font-size: 1.6em;
   font-weight: 700;
   color: var(--color-primary-blue);
-  background-color: var(--color-tertiary-gray);
+  background-color: var(--color-tertiary-gray-light);
   border-radius: var(--border-radius-base);
   box-shadow: var(--box-shadow-primary);
 }

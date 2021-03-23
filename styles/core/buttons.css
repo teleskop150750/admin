@@ -1,0 +1,29 @@
+.buttons {
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.button {
+  --gradient-primary: linear-gradient(101.12deg, var(--color-primary) 0.76%, var(--color-primary-purple) 100%);
+  padding: 0.4rem 1rem;
+  color: var(--color-tertiary-white);
+  background-color: transparent;
+  background-color: var(--color-primary);
+  background-image: var(--gradient-primary);
+  border: 0;
+  border-radius: var(--border-radius-base);
+  outline: none;
+  box-shadow: var(--box-shadow-primary);
+}
+
+.button--success {
+  --color-primary: #8bc34a;
+  --color-primary-purple: #5d941d;
+  --gradient-primary: linear-gradient(101.12deg, var(--color-primary) 0.76%, var(--color-primary-purple) 100%);
+}
+
+.button:focus,
+.button:hover {
+  background-image: none;
+}
