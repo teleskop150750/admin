@@ -9,8 +9,9 @@
   <link rel="shortcut icon" href="favicon.png" type="image/png">
   <!-- select2 -->
   <link rel="stylesheet" href="libs/select2/select2.css">
-  <!-- select2-bootstrap4-theme -->
   <link rel="stylesheet" href="libs/select2/select2-bootstrap4.css">
+  <!-- wysiwyg -->
+  <link rel="stylesheet" href="libs/wysiwyg/bootstrap3-wysihtml5.min.css">
   <link rel="stylesheet" href="core.css">
   <link rel="stylesheet" href="product.css">
 </head>
@@ -264,6 +265,12 @@
             </div>
           </div>
 
+          <div class="form__group">
+            <label class="form__label" for="content">Контент</label>
+            <textarea id="content" name="content"></textarea>
+            <div class="form__error"></div>
+          </div>
+
           <div class="image-box-wrapper">
             <div class="image-box">
               <p class="image-box__title">Базовое изображение</p>
@@ -337,7 +344,10 @@
     <p class="footer__copy">© 2021 ГПОУ ТО "Донской колледж информационных технологий" Куликов Денис 4‑П‑1</p>
   </footer>
   <script src="libs/jquery.js"></script>
+  <!-- select2 -->
   <script src="libs/select2/select2.js"></script>
+  <!-- wysiwyg -->
+  <script src="libs/wysiwyg/bootstrap3-wysihtml5.all.min.js"></script>
   <script src="core.js" type="module"></script>
   <script src="product-add.js" type="module"></script>
 </body>
