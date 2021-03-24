@@ -1,7 +1,6 @@
 .form {
   display: grid;
   gap: 1rem;
-  max-width: 500px;
   padding: 1rem;
 }
 
@@ -12,9 +11,15 @@
 
 .form__group {
   display: grid;
+  max-width: 500px;
+}
+
+.form__group--w100 {
+  max-width: 100%;
 }
 
 .form__label {
+  display: block;
   margin-bottom: 0.5rem;
   font-size: 14px;
   font-weight: 500;
@@ -81,6 +86,7 @@
 
 .form__option {
   justify-self: start;
+  padding: 0.4rem 0;
 }
 
 .check {
@@ -122,12 +128,32 @@
   box-shadow: var(--checkbox-box-shadow-base);
 }
 
+.check__box--radio {
+  border-radius: 50%;
+}
+
 .check__input:focus + .check__box {
   background-color: var(--checkbox-background-color-hover);
 }
 
 .check__input:checked + .check__box {
   background-image: url('../../images/check.svg');
+}
+
+.check__input:checked + .check__box--radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: none;
+}
+
+.check__input:checked + .check__box--radio::after {
+  display: block;
+  width: 13px;
+  height: 13px;
+  content: '';
+  background-color: var(--color-primary-blue);
+  border-radius: 50%;
 }
 
 .form__button {

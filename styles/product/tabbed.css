@@ -1,0 +1,38 @@
+.tabbed {
+  padding: 1rem 0;
+}
+
+.tabbed__container {
+  padding: 1rem;
+  background-color: var(--color-tertiary-gray);
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-primary);
+}
+
+.tabbed__list {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tabbed__button {
+  display: block;
+  padding: 0.5rem 1em;
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: var(--color-tertiary-gray);
+  border: 0;
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-primary);
+}
+
+.tabbed__button[aria-selected] {
+  color: var(--color-primary-black);
+  border-bottom: 2px solid var(--color-primary-blue);
+}
+
+.tabbed__section {
+  padding: 1rem 0;
+}

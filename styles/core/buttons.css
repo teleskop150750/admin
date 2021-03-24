@@ -6,7 +6,7 @@
 
 .button {
   --gradient-primary: linear-gradient(101.12deg, var(--color-primary) 0.76%, var(--color-primary-purple) 100%);
-  padding: 0.4rem 1rem;
+  padding: 0.4em 1em;
   color: var(--color-tertiary-white);
   background-color: transparent;
   background-color: var(--color-primary);

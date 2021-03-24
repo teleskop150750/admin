@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="libs/select2/select2.css">
   <link rel="stylesheet" href="libs/select2/select2-bootstrap4.css">
   <!-- wysiwyg -->
+  <link rel="stylesheet" href="libs/wysiwyg/bootstrap.css">
   <link rel="stylesheet" href="libs/wysiwyg/bootstrap3-wysihtml5.min.css">
+  <!-- main -->
   <link rel="stylesheet" href="core.css">
   <link rel="stylesheet" href="product.css">
 </head>
@@ -65,7 +67,7 @@
             </div>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--menu" href="">
+            <button class="nav__link nav__link--treeview nav__link--menu">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#menu"></use>
               </svg>
@@ -80,7 +82,7 @@
                   <a class="nav__submenu-item-link" href="category.html">Список категорий</a>
                 </li>
                 <li class="nav__submenu-item">
-                  <a class="nav__submenu-item-link" href="">Добавить категорию</a>
+                  <a class="nav__submenu-item-link" href="category-add.html">Добавить категорию</a>
                 </li>
               </ul>
             </div>
@@ -94,7 +96,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--users" href="">
+            <button class="nav__link nav__link--treeview nav__link--users">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#users"></use>
               </svg>
@@ -115,7 +117,7 @@
             </div>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--currencies" href="">
+            <button class="nav__link nav__link--treeview nav__link--currencies">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#currencies"></use>
               </svg>
@@ -211,14 +213,14 @@
             <label class="check form__option">
               <input class="check__input" type="checkbox" name="status">
               <span class="check__box"></span>
-              Второй
+              Статус
             </label>
           </div>
           <div class="form__group">
             <label class="check form__option">
               <input class="check__input" type="checkbox" name="hit">
               <span class="check__box"></span>
-              Второй
+              Хит
             </label>
           </div>
           <div class="form__group">
@@ -263,66 +265,68 @@
                 <option>Pennie Khang</option>
               </select>
             </div>
+            <div class="form__error"></div>
           </div>
 
-          <div class="form__group">
+          <div class="form__group form__group--w100">
             <label class="form__label" for="content">Контент</label>
-            <textarea id="content" name="content"></textarea>
+            <textarea id="content" name="content"
+              style="width: 100%; height: 200px; font-size: 14px; line-height: 18px;"></textarea>
             <div class="form__error"></div>
           </div>
 
           <div class="image-box-wrapper">
-            <div class="image-box">
+            <div class="image-box image-box--single">
               <p class="image-box__title">Базовое изображение</p>
               <input type="hidden" name="image" value="">
-              <div class="image-box__file-wrapper">
-                <div class="image-box__file">
-                  <input type="hidden" name="gallery[]">
-                  <svg class="image-box__file-icon">
-                    <use xlink:href="images/sprite-product.svg#file"></use>
+              <div class="image-box__fille-wrapper">
+                <div class="image-box__fille">
+                  <input class="image-box__fille-input" type="hidden" name="image">
+                  <svg class="image-box__fille-icon">
+                    <use xlink:href="images/sprite-product.svg#fille"></use>
                   </svg>
-                  <span class="image-box__file-name">default.png</span>
+                  <span class="image-box__fille-name">default.png</span>
                 </div>
               </div>
               <button class="image-box__button image-box__button--select button" type="button">
                 Выбрать
               </button>
             </div>
-            <div class="image-box">
+            <div class="image-box image-box--gallery">
               <p class="image-box__title">Картинки галереи</p>
-              <div class="image-box__file-wrapper">
-                <div class="image-box__file">
-                  <input type="hidden" name="gallery[]">
-                  <svg class="image-box__file-icon">
-                    <use xlink:href="images/sprite-product.svg#file"></use>
+              <div class="image-box__fille-wrapper">
+                <div class="image-box__fille">
+                  <input class="image-box__fille-input" type="hidden" name="gallery[]" value="">
+                  <svg class="image-box__fille-icon">
+                    <use xlink:href="images/sprite-product.svg#fille"></use>
                   </svg>
-                  <span class="image-box__file-name">default.png</span>
-                  <button class="image-box__file-button" type="button">
-                    <svg class="image-box__file-button-icon">
+                  <span class="image-box__fille-name">default.png</span>
+                  <button class="image-box__fille-button" type="button">
+                    <svg class="image-box__fille-button-icon">
                       <use xlink:href="images/sprite-product.svg#delete"></use>
                     </svg>
                   </button>
                 </div>
-                <div class="image-box__file">
-                  <input type="hidden" name="gallery[]">
-                  <svg class="image-box__file-icon">
-                    <use xlink:href="images/sprite-product.svg#file"></use>
+                <div class="image-box__fille">
+                  <input class="image-box__fille-input" type="hidden" name="gallery[]">
+                  <svg class="image-box__fille-icon">
+                    <use xlink:href="images/sprite-product.svg#fille"></use>
                   </svg>
-                  <span class="image-box__file-name">default.png</span>
-                  <button class="image-box__file-button" type="button">
-                    <svg class="image-box__file-button-icon">
+                  <span class="image-box__fille-name">default.png</span>
+                  <button class="image-box__fille-button" type="button">
+                    <svg class="image-box__fille-button-icon">
                       <use xlink:href="images/sprite-product.svg#delete"></use>
                     </svg>
                   </button>
                 </div>
-                <div class="image-box__file">
-                  <input type="hidden" name="gallery[]">
-                  <svg class="image-box__file-icon">
-                    <use xlink:href="images/sprite-product.svg#file"></use>
+                <div class="image-box__fille">
+                  <input class="image-box__fille-input" type="hidden" name="gallery[]">
+                  <svg class="image-box__fille-icon">
+                    <use xlink:href="images/sprite-product.svg#fille"></use>
                   </svg>
-                  <span class="image-box__file-name">default.png</span>
-                  <button class="image-box__file-button" type="button">
-                    <svg class="image-box__file-button-icon">
+                  <span class="image-box__fille-name">default.png</span>
+                  <button class="image-box__fille-button" type="button">
+                    <svg class="image-box__fille-button-icon">
                       <use xlink:href="images/sprite-product.svg#delete"></use>
                     </svg>
                   </button>
@@ -334,20 +338,324 @@
             </div>
           </div>
 
+          <div class="tabbed">
+            <div class="tabbed__container">
+              <ul class="tabbed__list" role="tablist">
+                <li class="tabbed__item" role="presentation">
+                  <button class="tabbed__button" type="button" role="tab" id="tab1" aria-selected="true">Описание</button>
+                </li>
+                <li class="tabbed__item" role="presentation">
+                  <button class="tabbed__button" type="button" role="tab" id="tab2" tabindex="-1">Отзывы</button>
+                </li>
+              </ul>
+              <div class="tabbed__section description" role="tabpanel" tabindex="-1" aria-labelledby="undefined">
+                <label class="check form__option">
+                  <input class="check__input" type="radio" name="attrs[1]">
+                  <span class="check__box check__box--radio"></span>
+                  1111
+                </label>
+                <label class="check form__option">
+                  <input class="check__input" type="radio" name="attrs[1]">
+                  <span class="check__box check__box--radio"></span>
+                  222
+                </label>
+                <label class="check form__option">
+                  <input class="check__input" type="radio" name="attrs[1]">
+                  <span class="check__box check__box--radio"></span>
+                  33333
+                </label>
+              </div>
+              <div class="tabbed__section reviews" role="tabpanel" tabindex="-1" aria-labelledby="undefined" hidden>
+                <label class="check form__option">
+                  <input class="check__input" type="radio" name="attrs[2]">
+                  <span class="check__box check__box--radio"></span>
+                  sdf
+                </label>
+                <label class="check form__option">
+                  <input class="check__input" type="radio" name="attrs[2]">
+                  <span class="check__box check__box--radio"></span>
+                  sdf23
+                </label>
+                <label class="check form__option">
+                  <input class="check__input" type="radio" name="attrs[2]">
+                  <span class="check__box check__box--radio"></span>
+                  23sdfsdf
+                </label>
+              </div>
+            </div>
+          </div>
+
         </div>
         <button class="button button--success form__button">Добавить</button>
       </form>
     </main>
   </div>
 
+  <div class="modal-filles modal-filles--single">
+    <button class="modal-filles__button modal-filles__button--close">
+      <svg class="modal-filles__button-icon">
+        <use xlink:href="images/sprite-product.svg#delete"></use>
+      </svg>
+    </button>
+
+    <div class="modal-filles__list">
+      <div class="modal-filles__list-inner">
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="modal-filles modal-filles--gallery">
+    <button class="modal-filles__button modal-filles__button--close">
+      <svg class="modal-filles__button-icon">
+        <use xlink:href="images/sprite-product.svg#delete"></use>
+      </svg>
+    </button>
+    <button class="modal-filles__button modal-filles__button--ok">
+      <svg class="modal-filles__button-icon">
+        <use xlink:href="images/sprite-product.svg#ok"></use>
+      </svg>
+    </button>
+
+    <div class="modal-filles__list">
+      <div class="modal-filles__list-inner">
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product-1.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product-2.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+        <div class="fille">
+          <div class="fille__inner">
+            <div class="fille__img-wrapper">
+              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+            </div>
+          </div>
+          <div class="fille__buttons">
+            <button class="button button--delete fille__button">удалить</button>
+            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
   <footer class="footer page__footer">
     <p class="footer__copy">© 2021 ГПОУ ТО "Донской колледж информационных технологий" Куликов Денис 4‑П‑1</p>
   </footer>
+  <!-- jquery -->
   <script src="libs/jquery.js"></script>
+  <!-- bootstrap -->
+  <script src="libs/bootstrap/bootstrap.js"></script>
   <!-- select2 -->
   <script src="libs/select2/select2.js"></script>
   <!-- wysiwyg -->
-  <script src="libs/wysiwyg/bootstrap3-wysihtml5.all.min.js"></script>
+  <script src="libs/wysiwyg/wysihtml5.js"></script>
+  <!-- main -->
   <script src="core.js" type="module"></script>
   <script src="product-add.js" type="module"></script>
 </body>

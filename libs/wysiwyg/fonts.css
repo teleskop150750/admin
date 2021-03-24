@@ -1,0 +1,9 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  font-display: swap;
+  src: url('glyphicons-halflings-regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}

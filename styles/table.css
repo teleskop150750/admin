@@ -7,11 +7,25 @@
 }
 
 .table__inner {
-  display: flex;
-  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1rem 1fr 1rem;
+  padding: 1rem 0;
+}
+
+.table__inner::before {
+  display: block;
+  grid-column: 1 / 2;
+  content: '';
+}
+
+.table__inner::after {
+  display: block;
+  grid-column: 3 / 4;
+  content: '';
 }
 
 .table table {
+  grid-column: 2 / 3;
   margin-bottom: 1rem;
   vertical-align: top;
   border-spacing: 0;
