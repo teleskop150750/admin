@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Админ-панель</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <!-- select2 -->
+  <link rel="stylesheet" href="libs/select2/select2.css">
+  <!-- select2-bootstrap4-theme -->
+  <link rel="stylesheet" href="libs/select2/select2-bootstrap4.css">
+  <link rel="stylesheet" href="core.css">
+  <link rel="stylesheet" href="product.css">
+</head>
+
+<body class="page__body">
+  <header class="header page__header">
+    <div class="header__inner">
+      <a class="header__link" href="#">Luxury Wacthes</a>
+    </div>
+  </header>
+
+  <div class="content">
+    <aside class="aside page__aside">
+      <nav class="nav aside__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--home" href="index.html">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#home"></use>
+              </svg>
+              Главная
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--orders" href="order.html">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#cart"></use>
+              </svg>
+              Заказы
+            </a>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link nav__link--active nav__link--treeview nav__link--products" href="">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#product"></use>
+              </svg>
+              Товары
+              <svg class="nav__item-arrow">
+                <use xlink:href="images/sprite-aside.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="nav__submenu">
+              <ul class="nav__submenu-inner">
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="product.html">Список товаров</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Добавить товаров</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link nav__link--treeview nav__link--menu" href="">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#menu"></use>
+              </svg>
+              Категории
+              <svg class="nav__item-arrow">
+                <use xlink:href="images/sprite-aside.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="nav__submenu">
+              <ul class="nav__submenu-inner">
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="category.html">Список категорий</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Добавить категорию</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--cache" href="">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#cache"></use>
+              </svg>
+              Кэширование
+            </a>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link nav__link--treeview nav__link--users" href="">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#users"></use>
+              </svg>
+              Пользователи
+              <svg class="nav__item-arrow">
+                <use xlink:href="images/sprite-aside.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="nav__submenu">
+              <ul class="nav__submenu-inner">
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Список пользователей</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Добавить пользователя</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link nav__link--treeview nav__link--currencies" href="">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#currencies"></use>
+              </svg>
+              Валюты
+              <svg class="nav__item-arrow">
+                <use xlink:href="images/sprite-aside.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="nav__submenu">
+              <ul class="nav__submenu-inner">
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">
+                    Список валют
+                  </a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Добавить валюту</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link nav__link--treeview nav__link--filters">
+              <svg class="nav__item-icon">
+                <use xlink:href="images/sprite-aside.svg#filters"></use>
+              </svg>
+              Фильтры
+              <svg class="nav__item-arrow">
+                <use xlink:href="images/sprite-aside.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="nav__submenu">
+              <ul class="nav__submenu-inner">
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Список групп</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Добавить группу</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Список фильтров</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-item-link" href="">Добавить фильтр</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main page__main">
+      <h1 class="main__title">Редактирование товара Casio GA-1000-1AER</h1>
+
+      <form class="form">
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label class="form__label form__label--required" for="title">Наименование товара</label>
+            <input class="form__input" type="text" name="title" id="title" required>
+            <div class="form__error">Короткий текст</div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="category_id">Родительская категория</label>
+            <select class="form__input" name="category_id" id="category_id">
+              <option value="0">Самостоятельная категория</option>
+              <option value="1">Men</option>
+              <option value="4">&nbsp;-Электронные</option>
+            </select>
+            <div class="form__error"></div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="keywords">Ключивые слова</label>
+            <input class="form__input" type="text" name="keywords" id="keywords">
+            <div class="form__error"></div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="description">Описание</label>
+            <input class="form__input" type="text" name="description" id="description">
+            <div class="form__error"></div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="price">Цена</label>
+            <input class="form__input" type="number" name="price" id="price">
+            <div class="form__error"></div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="old_price">Страная цена</label>
+            <input class="form__input" type="number" name="old_price" id="old_price">
+            <div class="form__error"></div>
+          </div>
+          <div class="form__group">
+            <label class="check form__option">
+              <input class="check__input" type="checkbox" name="status">
+              <span class="check__box"></span>
+              Второй
+            </label>
+          </div>
+          <div class="form__group">
+            <label class="check form__option">
+              <input class="check__input" type="checkbox" name="hit">
+              <span class="check__box"></span>
+              Второй
+            </label>
+          </div>
+          <div class="form__group">
+            <div class="form-group">
+              <label class="form__label" for="related">Связанные товары</label>
+              <select class="select-multiple" id="related" name="related[]" multiple data-placeholder="Связанные товары"
+                data-allow-clear="1">
+                <option>Tommy Yount</option>
+                <option>Hye Panter</option>
+                <option>Vi Yohe</option>
+                <option>Keva Bandy</option>
+                <option>Hannelore Corning</option>
+                <option>Delorse Whitcher</option>
+                <option>Katharyn Marrinan</option>
+                <option>Jeannine Tope</option>
+                <option>Jamila Braggs</option>
+                <option>Eden Cunniff</option>
+                <option>Suzy Schoen</option>
+                <option>Elza Mccook</option>
+                <option>Liana Goris</option>
+                <option>Pauletta Schlabach</option>
+                <option>Synthia Dupuis</option>
+                <option>Scarlett Kestler</option>
+                <option>Magdalen Mele</option>
+                <option>Susanna Schenk</option>
+                <option>Else Stupka</option>
+                <option>Hannelore Corning</option>
+                <option>Delorse Whitcher</option>
+                <option>Katharyn Marrinan</option>
+                <option>Jeannine Tope</option>
+                <option>Jamila Braggs</option>
+                <option>Eden Cunniff</option>
+                <option>Suzy Schoen</option>
+                <option>Elza Mccook</option>
+                <option>Liana Goris</option>
+                <option>Pauletta Schlabach</option>
+                <option>Synthia Dupuis</option>
+                <option>Scarlett Kestler</option>
+                <option>Magdalen Mele</option>
+                <option>Susanna Schenk</option>
+                <option>Else Stupka</option>
+                <option>Pennie Khang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="image-box-wrapper">
+            <div class="image-box">
+              <p class="image-box__title">Базовое изображение</p>
+              <input type="hidden" name="image" value="">
+              <div class="image-box__file-wrapper">
+                <div class="image-box__file">
+                  <input type="hidden" name="gallery[]">
+                  <svg class="image-box__file-icon">
+                    <use xlink:href="images/sprite-product.svg#file"></use>
+                  </svg>
+                  <span class="image-box__file-name">default.png</span>
+                </div>
+              </div>
+              <button class="image-box__button image-box__button--select button" type="button">
+                Выбрать
+              </button>
+            </div>
+            <div class="image-box">
+              <p class="image-box__title">Картинки галереи</p>
+              <div class="image-box__file-wrapper">
+                <div class="image-box__file">
+                  <input type="hidden" name="gallery[]">
+                  <svg class="image-box__file-icon">
+                    <use xlink:href="images/sprite-product.svg#file"></use>
+                  </svg>
+                  <span class="image-box__file-name">default.png</span>
+                  <button class="image-box__file-button" type="button">
+                    <svg class="image-box__file-button-icon">
+                      <use xlink:href="images/sprite-product.svg#delete"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="image-box__file">
+                  <input type="hidden" name="gallery[]">
+                  <svg class="image-box__file-icon">
+                    <use xlink:href="images/sprite-product.svg#file"></use>
+                  </svg>
+                  <span class="image-box__file-name">default.png</span>
+                  <button class="image-box__file-button" type="button">
+                    <svg class="image-box__file-button-icon">
+                      <use xlink:href="images/sprite-product.svg#delete"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="image-box__file">
+                  <input type="hidden" name="gallery[]">
+                  <svg class="image-box__file-icon">
+                    <use xlink:href="images/sprite-product.svg#file"></use>
+                  </svg>
+                  <span class="image-box__file-name">default.png</span>
+                  <button class="image-box__file-button" type="button">
+                    <svg class="image-box__file-button-icon">
+                      <use xlink:href="images/sprite-product.svg#delete"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button class="image-box__button image-box__button--add button" type="button">
+                Добавить
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <button class="button button--success form__button">Добавить</button>
+      </form>
+    </main>
+  </div>
+
+  <footer class="footer page__footer">
+    <p class="footer__copy">© 2021 ГПОУ ТО "Донской колледж информационных технологий" Куликов Денис 4‑П‑1</p>
+  </footer>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/select2/select2.js"></script>
+  <script src="core.js" type="module"></script>
+  <script src="product-add.js" type="module"></script>
+</body>
+
+</html>

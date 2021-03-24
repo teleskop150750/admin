@@ -53,6 +53,14 @@
   appearance: textfield;
 }
 
+.form__input::-webkit-inner-spin-button,
+.form__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 .form__input:focus {
   background-color: var(--field-background-color-focus);
   outline: none;
@@ -69,6 +77,57 @@
   font-size: 0.7rem;
   line-height: 1rem;
   color: var(--color-secondary-orange);
+}
+
+.form__option {
+  justify-self: start;
+}
+
+.check {
+  --checkbox-color-base: var(--color-primary-black);
+  --checkbox-color-disabled: rgba(var(--color-rgb-gray), 0.64);
+  --checkbox-background-color-base: var(--color-tertiary-gray-ultra-light);
+  --checkbox-background-color-hover: var(--color-tertiary-gray);
+  --checkbox-background-color-focus: var(--color-tertiary-gray-ultra-light);
+  --checkbox-background-color-checked: var(--color-tertiary-gray-ultra-light);
+  --checkbox-background-color-disabled: var(--color-tertiary-gray);
+  --checkbox-mark-color-base: var(--color-primary-blue);
+  --checkbox-mark-color-disabled: rgba(var(--color-rgb-gray), 0.64);
+  --checkbox-box-shadow-base: -1px -1px 3px rgba(var(--color-rgb-white), 0.25), 1px 1px 3px rgba(var(--color-rgb-blue), 0.4), inset -1px -1px 1px rgba(var(--color-rgb-white), 0.7), inset 1px 1px 2px rgba(var(--color-rgb-blue), 0.2);
+  --checkbox-box-shadow-focus: -1px -1px 3px rgba(var(--color-rgb-white), 0.25), 1px 1px 3px rgba(var(--color-rgb-blue), 0.4), 4px 4px 10px rgba(var(--color-rgb-blue), 0.4), -4px -4px 10px rgba(var(--color-rgb-white), 0.25), inset -1px -1px 1px rgba(var(--color-rgb-white), 0.7), inset 1px 1px 2px rgba(var(--color-rgb-blue), 0.2);
+  display: grid;
+  grid-template-columns: min-content max-content;
+  gap: 1rem;
+  align-items: center;
+  align-self: start;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary-black);
+  cursor: pointer;
+}
+
+.check__input {
+  position: absolute;
+  appearance: none;
+}
+
+.check__box {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  background-color: var(--checkbox-background-color-base);
+  border: none;
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--checkbox-box-shadow-base);
+}
+
+.check__input:focus + .check__box {
+  background-color: var(--checkbox-background-color-hover);
+}
+
+.check__input:checked + .check__box {
+  background-image: url('../../images/check.svg');
 }
 
 .form__button {
