@@ -31,7 +31,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--orders" href="order.html">
+            <a class="nav__link nav__link--currencysedit href=" currency.edit">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#cart"></use>
               </svg>
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--active nav__link--treeview nav__link--products" href="">
+            <button class="nav__link nav__link--treeview nav__link--products">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#product"></use>
               </svg>
@@ -60,7 +60,7 @@
             </div>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--menu" href="">
+            <button class="nav__link nav__link--treeview nav__link--menu">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#menu"></use>
               </svg>
@@ -89,7 +89,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--users" href="">
+            <button class="nav__link nav__link--treeview nav__link--users">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#users"></use>
               </svg>
@@ -133,7 +133,7 @@
             </div>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--filters">
+            <button class="nav__link nav__link--active nav__link--treeview nav__link--filters">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#filters"></use>
               </svg>
@@ -164,31 +164,24 @@
     </aside>
 
     <main class="main page__main">
-      <h1 class="main__title">Список заказов</h1>
+      <h1 class="main__title">Группы фильтров</h1>
+
       <div class="table">
         <div class="table__wrapper">
           <div class="table__inner">
             <table>
               <thead>
                 <tr>
-                  <th>ID</th>
-                  <th>Категория</th>
                   <th>Наименование</th>
-                  <th>Цена</th>
-                  <th>Статус</th>
-                  <th>Действия</th>
+                  <th>Действие</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>3</td>
-                  <td>Casio</td>
-                  <td>Casio GA-1000-1AER</td>
-                  <td>400</td>
-                  <td>On</td>
+                  <td>Механизм</td>
                   <td>
                     <div class="table__buttons">
-                      <a class="table__button table__button--open" href="product-edit.html">
+                      <a class="table__button table__button--open" href="group-edit.html">
                         <svg class="table__button-icon">
                           <use xlink:href="images/sprite-table.svg#eye"></use>
                         </svg>
@@ -202,14 +195,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>2</td>
-                  <td>Casio</td>
-                  <td>Casio MQ-24-7BUL</td>
-                  <td>70</td>
-                  <td>On</td>
+                  <td>Стекло</td>
                   <td>
                     <div class="table__buttons">
-                      <a class="table__button table__button--open" href="product-edit.html">
+                      <a class="table__button table__button--open" href="group-edit.html">
                         <svg class="table__button-icon">
                           <use xlink:href="images/sprite-table.svg#eye"></use>
                         </svg>
@@ -223,14 +212,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>1</td>
-                  <td>Casio</td>
-                  <td>Casio MRP-700-1AVEF</td>
-                  <td>300</td>
-                  <td>On</td>
+                  <td>Ремешок</td>
                   <td>
                     <div class="table__buttons">
-                      <a class="table__button table__button--open" href="product-edit.html">
+                      <a class="table__button table__button--open" href="group-edit.html">
                         <svg class="table__button-icon">
                           <use xlink:href="images/sprite-table.svg#eye"></use>
                         </svg>
@@ -244,14 +229,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>6</td>
-                  <td>Citizen</td>
-                  <td>Citizen AT0696-59E</td>
-                  <td>350</td>
-                  <td>On</td>
+                  <td>Корпус</td>
                   <td>
                     <div class="table__buttons">
-                      <a class="table__button table__button--open" href="product-edit.html">
+                      <a class="table__button table__button--open" href="group-edit.html">
                         <svg class="table__button-icon">
                           <use xlink:href="images/sprite-table.svg#eye"></use>
                         </svg>
@@ -265,119 +246,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>5</td>
-                  <td>Citizen</td>
-                  <td>Citizen BJ2111-08E</td>
-                  <td>500</td>
-                  <td>On</td>
+                  <td>Индикация</td>
                   <td>
                     <div class="table__buttons">
-                      <a class="table__button table__button--open" href="product-edit.html">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#eye"></use>
-                        </svg>
-                      </a>
-                      <button class="table__button table__button--delete">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#delete"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Механические</td>
-                  <td>Citizen JP1010-00E</td>
-                  <td>400</td>
-                  <td>On</td>
-                  <td>
-                    <div class="table__buttons">
-                      <a class="table__button table__button--open" href="product-edit.html">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#eye"></use>
-                        </svg>
-                      </a>
-                      <button class="table__button table__button--delete">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#delete"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Casio</td>
-                  <td>Q&amp;Q Q956J302Y</td>
-                  <td>20</td>
-                  <td>On</td>
-                  <td>
-                    <div class="table__buttons">
-                      <a class="table__button table__button--open" href="product-edit.html">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#eye"></use>
-                        </svg>
-                      </a>
-                      <button class="table__button table__button--delete">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#delete"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Casio</td>
-                  <td>Royal London 20034-02</td>
-                  <td>110</td>
-                  <td>On</td>
-                  <td>
-                    <div class="table__buttons">
-                      <a class="table__button table__button--open" href="product-edit.html">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#eye"></use>
-                        </svg>
-                      </a>
-                      <button class="table__button table__button--delete">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#delete"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Casio</td>
-                  <td>Royal London 41040-01</td>
-                  <td>90</td>
-                  <td>On</td>
-                  <td>
-                    <div class="table__buttons">
-                      <a class="table__button table__button--open" href="product-edit.html">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#eye"></use>
-                        </svg>
-                      </a>
-                      <button class="table__button table__button--delete">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#delete"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Casio</td>
-                  <td>Royal London 41156-02</td>
-                  <td>100</td>
-                  <td>On</td>
-                  <td>
-                    <div class="table__buttons">
-                      <a class="table__button table__button--open" href="product-edit.html">
+                      <a class="table__button table__button--open" href="group-edit.html">
                         <svg class="table__button-icon">
                           <use xlink:href="images/sprite-table.svg#eye"></use>
                         </svg>
@@ -395,69 +267,6 @@
           </div>
         </div>
       </div>
-      <nav class="pagination">
-        <ul class="pagination__list">
-          <li class="pagination__item">
-            <button class="pagination__button" aria-label="первая страница">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 40">
-                <defs />
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M.23 20.6l8.89 8.1a.74.74 0 00.8.12c.3-.13.45-.35.45-.67v-5.19h28.89a.72.72 0 00.74-.74v-4.45a.72.72 0 00-.74-.74h-28.9v-5.18c0-.3-.14-.53-.43-.67a.72.72 0 00-.81.14l-8.89 8.2a.76.76 0 000 1.08z" />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <path d="M0 0h40v40H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button">1</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button pagination__button--ellipsis">...</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button">2</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button">3</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button pagination__button--active">4</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button">5</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button">6</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button pagination__button--ellipsis">...</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button">93</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button" aria-label="последняя страница">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 40">
-                <defs />
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M39.77 19.4l-8.89-8.1a.74.74 0 00-.81-.12.67.67 0 00-.44.67v5.19H.74a.72.72 0 00-.74.74v4.44a.72.72 0 00.74.74h28.89v5.19c0 .3.15.53.44.67.3.12.56.08.81-.14l8.89-8.2a.76.76 0 000-1.08z" />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <path d="M0 0h40v40H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-          </li>
-        </ul>
-      </nav>
     </main>
   </div>
 

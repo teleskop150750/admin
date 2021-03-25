@@ -8,7 +8,7 @@
   <title>Админ-панель</title>
   <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="core.css">
-  <link rel="stylesheet" href="order.css">
+  <link rel="stylesheet" href="cache.css">
 </head>
 
 <body class="page__body">
@@ -31,7 +31,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--active nav__link--orders" href="order.html">
+            <a class="nav__link nav__link--orders" href="order.html">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#cart"></use>
               </svg>
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--products" href="">
+            <button class="nav__link nav__link--treeview nav__link--products">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#product"></use>
               </svg>
@@ -60,7 +60,7 @@
             </div>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--menu" href="">
+            <button class="nav__link nav__link--treeview nav__link--menu">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#menu"></use>
               </svg>
@@ -81,7 +81,7 @@
             </div>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--cache" href="cache.html">
+            <a class="nav__link nav__link--active nav__link--cache" href="cache.html">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#cache"></use>
               </svg>
@@ -110,7 +110,7 @@
             </div>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--currencies" href="">
+            <button class="nav__link nav__link--treeview nav__link--currencies">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#currencies"></use>
               </svg>
@@ -164,37 +164,25 @@
     </aside>
 
     <main class="main page__main">
-      <h1 class="main__title">Список заказов</h1>
+      <h1 class="main__title">Очистка кэша</h1>
+
       <div class="table">
         <div class="table__wrapper">
           <div class="table__inner">
             <table>
               <thead>
                 <tr>
-                  <th>ID</th>
-                  <th>Покупатель</th>
-                  <th>Статус</th>
-                  <th>Сумма</th>
-                  <th>Дата создания</th>
-                  <th>Дата изменения</th>
+                  <th>Название</th>
+                  <th>Описание</th>
                   <th>Действия</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>8</td>
-                  <td>teleskop150750lg</td>
-                  <td>Новый</td>
-                  <td>21900.00 RU</td>
-                  <td>2021-01-10 17:59:54</td>
-                  <td></td>
+                  <td>Кэш категорий</td>
+                  <td>Меню категорий на сайте. Кэшируется на 1 час</td>
                   <td>
                     <div class="table__buttons">
-                      <a class="table__button table__button--open" href="order-view.html">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#eye"></use>
-                        </svg>
-                      </a>
                       <button class="table__button table__button--delete">
                         <svg class="table__button-icon">
                           <use xlink:href="images/sprite-table.svg#delete"></use>
@@ -203,42 +191,11 @@
                     </div>
                   </td>
                 </tr>
-                <tr class="">
-                  <td>9</td>
-                  <td>teleskop150750lg</td>
-                  <td>Новый</td>
-                  <td>57670.00 RU</td>
-                  <td>2021-01-10 18:02:21</td>
-                  <td></td>
+                <tr>
+                  <td>Кэш категорий</td>
+                  <td>Меню категорий на сайте. Кэшируется на 1 час</td>
                   <td>
                     <div class="table__buttons">
-                      <a class="table__button table__button--open" href="order-view.html">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#eye"></use>
-                        </svg>
-                      </a>
-                      <button class="table__button table__button--delete">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#delete"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="">
-                  <td>10</td>
-                  <td>teleskop150750lg</td>
-                  <td>Новый</td>
-                  <td>6570.00 RU</td>
-                  <td>2021-01-10 18:06:28</td>
-                  <td></td>
-                  <td>
-                    <div class="table__buttons">
-                      <a class="table__button table__button--open" href="order-view.html">
-                        <svg class="table__button-icon">
-                          <use xlink:href="images/sprite-table.svg#eye"></use>
-                        </svg>
-                      </a>
                       <button class="table__button table__button--delete">
                         <svg class="table__button-icon">
                           <use xlink:href="images/sprite-table.svg#delete"></use>
@@ -252,69 +209,6 @@
           </div>
         </div>
       </div>
-      <nav class="pagination">
-        <ul class="pagination__list">
-          <li class="pagination__item">
-            <button class="pagination__button" aria-label="первая страница">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 40">
-                <defs />
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M.23 20.6l8.89 8.1a.74.74 0 00.8.12c.3-.13.45-.35.45-.67v-5.19h28.89a.72.72 0 00.74-.74v-4.45a.72.72 0 00-.74-.74h-28.9v-5.18c0-.3-.14-.53-.43-.67a.72.72 0 00-.81.14l-8.89 8.2a.76.76 0 000 1.08z" />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <path d="M0 0h40v40H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button">1</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button pagination__button--ellipsis">...</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button">2</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button">3</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button pagination__button--active">4</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button">5</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button">6</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button pagination__button--ellipsis">...</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button">93</button>
-          </li>
-          <li class="pagination__item">
-            <button class="pagination__button" aria-label="последняя страница">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 40">
-                <defs />
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M39.77 19.4l-8.89-8.1a.74.74 0 00-.81-.12.67.67 0 00-.44.67v5.19H.74a.72.72 0 00-.74.74v4.44a.72.72 0 00.74.74h28.89v5.19c0 .3.15.53.44.67.3.12.56.08.81-.14l8.89-8.2a.76.76 0 000-1.08z" />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <path d="M0 0h40v40H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-          </li>
-        </ul>
-      </nav>
     </main>
   </div>
 

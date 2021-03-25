@@ -8,7 +8,7 @@
   <title>Админ-панель</title>
   <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="core.css">
-  <link rel="stylesheet" href="category.css">
+  <link rel="stylesheet" href="product.css">
 </head>
 
 <body class="page__body">
@@ -31,7 +31,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--orders" href="order.html">
+            <a class="nav__link nav__link--currencysedit href=" currency.edit">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#cart"></use>
               </svg>
@@ -60,7 +60,7 @@
             </div>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--active nav__link--treeview nav__link--menu">
+            <button class="nav__link nav__link--treeview nav__link--menu">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#menu"></use>
               </svg>
@@ -89,7 +89,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--users" href="">
+            <button class="nav__link nav__link--treeview nav__link--users">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#users"></use>
               </svg>
@@ -110,7 +110,7 @@
             </div>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--currencies">
+            <button class="nav__link nav__link--treeview nav__link--currencies" href="">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#currencies"></use>
               </svg>
@@ -133,7 +133,7 @@
             </div>
           </li>
           <li class="nav__item">
-            <button class="nav__link nav__link--treeview nav__link--filters">
+            <button class="nav__link nav__link--active nav__link--treeview nav__link--filters">
               <svg class="nav__item-icon">
                 <use xlink:href="images/sprite-aside.svg#filters"></use>
               </svg>
@@ -164,36 +164,17 @@
     </aside>
 
     <main class="main page__main">
-      <h1 class="main__title">Редактирование категории Citizen</h1>
+      <h1 class="main__title">Новая группы фильтров</h1>
 
       <form class="form">
         <div class="form__group-wrapper">
           <div class="form__group">
-            <label class="form__label form__label--required" for="title">Наименование категории</label>
-            <input class="form__input" type="text" id="title" required>
+            <label class="form__label form__label--required" for="title">Наименование группы</label>
+            <input class="form__input" type="text" name="title" id="title" required>
             <div class="form__error">Короткий текст</div>
           </div>
-          <div class="form__group">
-            <label class="form__label" for="parent_id">Родительская категория</label>
-            <select class="form__input" name="parent_id" id="parent_id">
-              <option value="0">Самостоятельная категория</option>
-              <option value="1">Men</option>
-              <option value="4">&nbsp;-Электронные</option>
-            </select>
-            <div class="form__error"></div>
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="keywords">Ключивые слова</label>
-            <input class="form__input" type="text" id="keywords">
-            <div class="form__error"></div>
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="description">Описание</label>
-            <input class="form__input" type="text" id="description">
-            <div class="form__error"></div>
-          </div>
         </div>
-        <button class="button button--success form__button">Добавить</button>
+        <button class="button button--success form__button">Сохранить</button>
       </form>
     </main>
   </div>
