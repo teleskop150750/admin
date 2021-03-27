@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Админ-панель</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="core.css">
+  <link rel="stylesheet" href="user-login.css">
+</head>
+
+<body class="page__body">
+  <header class="header page__header">
+    <div class="header__inner">
+      <a class="header__link" href="#">Luxury Wacthes</a>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="form-wrapper">
+      <h2 class="form-wrapper__title">Admin</h2>
+      <form class="form" novalidate>
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label class="form__label" for="login">Логин</label>
+            <input class="form__input" type="text" name="login" id="login">
+            <div class="form__error"></div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="password">Пароль</label>
+            <input class="form__input" type="text" name="password" id="password">
+            <div class="form__error"></div>
+          </div>
+        </div>
+
+        <button class="button button--success form__button">Войти</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer page__footer">
+    <p class="footer__copy">© 2021 ГПОУ ТО "Донской колледж информационных технологий" Куликов Денис 4‑П‑1</p>
+  </footer>
+  <script src="libs/validate/underscore.js"></script>
+  <script src="libs/validate/validate.min.js"></script>
+  <script src="core.js" type="module"></script>
+  <script src="attribute-add.js" type="module"></script>
+
+</body>
+
+</html>

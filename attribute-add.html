@@ -166,12 +166,12 @@
     <main class="main page__main">
       <h1 class="main__title">Новая фильтры</h1>
 
-      <form class="form">
+      <form class="form" novalidate>
         <div class="form__group-wrapper">
           <div class="form__group">
             <label class="form__label form__label--required" for="title">Наименование фильтра</label>
             <input class="form__input" type="text" name="title" id="title" required="">
-            <div class="form__error">Короткий текст</div>
+            <div class="form__error"></div>
           </div>
         </div>
         <div class="form__group">
@@ -193,7 +193,11 @@
   <footer class="footer page__footer">
     <p class="footer__copy">© 2021 ГПОУ ТО "Донской колледж информационных технологий" Куликов Денис 4‑П‑1</p>
   </footer>
+  <script src="libs/validate/underscore.js"></script>
+  <script src="libs/validate/validate.min.js"></script>
   <script src="core.js" type="module"></script>
+  <script src="attribute-add.js" type="module"></script>
+
 </body>
 
 </html>
