@@ -279,13 +279,13 @@
             <div class="image-box image-box--single">
               <p class="image-box__title">Базовое изображение</p>
               <input type="hidden" name="image" value="">
-              <div class="image-box__fille-wrapper">
-                <div class="image-box__fille">
-                  <input class="image-box__fille-input" type="hidden" name="image">
-                  <svg class="image-box__fille-icon">
-                    <use xlink:href="images/sprite-product.svg#fille"></use>
+              <div class="image-box__file-wrapper">
+                <div class="image-box__file">
+                  <input class="image-box__file-input" type="hidden" name="image">
+                  <svg class="image-box__file-icon">
+                    <use xlink:href="images/sprite-product.svg#file"></use>
                   </svg>
-                  <span class="image-box__fille-name">default.png</span>
+                  <span class="image-box__file-name">default.png</span>
                 </div>
               </div>
               <button class="image-box__button image-box__button--select button" type="button">
@@ -294,39 +294,39 @@
             </div>
             <div class="image-box image-box--gallery">
               <p class="image-box__title">Картинки галереи</p>
-              <div class="image-box__fille-wrapper">
-                <div class="image-box__fille">
-                  <input class="image-box__fille-input" type="hidden" name="gallery[]" value="">
-                  <svg class="image-box__fille-icon">
-                    <use xlink:href="images/sprite-product.svg#fille"></use>
+              <div class="image-box__file-wrapper">
+                <div class="image-box__file">
+                  <input class="image-box__file-input" type="hidden" name="gallery[]" value="">
+                  <svg class="image-box__file-icon">
+                    <use xlink:href="images/sprite-product.svg#file"></use>
                   </svg>
-                  <span class="image-box__fille-name">default.png</span>
-                  <button class="image-box__fille-button" type="button">
-                    <svg class="image-box__fille-button-icon">
+                  <span class="image-box__file-name">default.png</span>
+                  <button class="image-box__file-button" type="button">
+                    <svg class="image-box__file-button-icon">
                       <use xlink:href="images/sprite-product.svg#delete"></use>
                     </svg>
                   </button>
                 </div>
-                <div class="image-box__fille">
-                  <input class="image-box__fille-input" type="hidden" name="gallery[]">
-                  <svg class="image-box__fille-icon">
-                    <use xlink:href="images/sprite-product.svg#fille"></use>
+                <div class="image-box__file">
+                  <input class="image-box__file-input" type="hidden" name="gallery[]">
+                  <svg class="image-box__file-icon">
+                    <use xlink:href="images/sprite-product.svg#file"></use>
                   </svg>
-                  <span class="image-box__fille-name">default.png</span>
-                  <button class="image-box__fille-button" type="button">
-                    <svg class="image-box__fille-button-icon">
+                  <span class="image-box__file-name">default.png</span>
+                  <button class="image-box__file-button" type="button">
+                    <svg class="image-box__file-button-icon">
                       <use xlink:href="images/sprite-product.svg#delete"></use>
                     </svg>
                   </button>
                 </div>
-                <div class="image-box__fille">
-                  <input class="image-box__fille-input" type="hidden" name="gallery[]">
-                  <svg class="image-box__fille-icon">
-                    <use xlink:href="images/sprite-product.svg#fille"></use>
+                <div class="image-box__file">
+                  <input class="image-box__file-input" type="hidden" name="gallery[]">
+                  <svg class="image-box__file-icon">
+                    <use xlink:href="images/sprite-product.svg#file"></use>
                   </svg>
-                  <span class="image-box__fille-name">default.png</span>
-                  <button class="image-box__fille-button" type="button">
-                    <svg class="image-box__fille-button-icon">
+                  <span class="image-box__file-name">default.png</span>
+                  <button class="image-box__file-button" type="button">
+                    <svg class="image-box__file-button-icon">
                       <use xlink:href="images/sprite-product.svg#delete"></use>
                     </svg>
                   </button>
@@ -343,12 +343,12 @@
               <div class="upload__text">Загрузить файл</div>
             </div>
             <input type="file" accept="image/*" tabindex="-1" class="upload__input">
-            <div class="upload__fille-wrapper">
-              <div class="upload__fille">
-                <svg class="upload__fille-icon">
-                  <use xlink:href="images/sprite-product.svg#fille"></use>
+            <div class="upload__file-wrapper">
+              <div class="upload__file">
+                <svg class="upload__file-icon">
+                  <use xlink:href="images/sprite-product.svg#file"></use>
                 </svg>
-                <span class="upload__fille-name">default.png</span>
+                <span class="upload__file-name">default.png</span>
               </div>
             </div>
           </div>
@@ -407,90 +407,90 @@
     </main>
   </div>
 
-  <div class="modal-filles modal-filles--single">
-    <button class="modal-filles__button modal-filles__button--close">
-      <svg class="modal-filles__button-icon">
+  <div class="modal-files modal-files--single">
+    <button class="modal-files__button modal-files__button--close">
+      <svg class="modal-files__button-icon">
         <use xlink:href="images/sprite-product.svg#delete"></use>
       </svg>
     </button>
 
-    <div class="modal-filles__list">
-      <div class="modal-filles__list-inner">
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+    <div class="modal-files__list">
+      <div class="modal-files__list-inner">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-single file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-single file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-single file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-single file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-single file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-single file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-single fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-single file__button">Выбрать</button>
           </div>
         </div>
       </div>
@@ -498,161 +498,161 @@
 
   </div>
 
-  <div class="modal-filles modal-filles--gallery">
-    <button class="modal-filles__button modal-filles__button--close">
-      <svg class="modal-filles__button-icon">
+  <div class="modal-files modal-files--gallery">
+    <button class="modal-files__button modal-files__button--close">
+      <svg class="modal-files__button-icon">
         <use xlink:href="images/sprite-product.svg#delete"></use>
       </svg>
     </button>
-    <button class="modal-filles__button modal-filles__button--ok">
-      <svg class="modal-filles__button-icon">
+    <button class="modal-files__button modal-files__button--ok">
+      <svg class="modal-files__button-icon">
         <use xlink:href="images/sprite-product.svg#ok"></use>
       </svg>
     </button>
 
-    <div class="modal-filles__list">
-      <div class="modal-filles__list-inner">
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+    <div class="modal-files__list">
+      <div class="modal-files__list-inner">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product-1.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product-1.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product-2.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product-2.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
-        <div class="fille">
-          <div class="fille__inner">
-            <div class="fille__img-wrapper">
-              <img class="fille__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
+        <div class="file">
+          <div class="file__inner">
+            <div class="file__img-wrapper">
+              <img class="file__img-wrapper-img" src="./upload/images/product.jpeg" alt="">
             </div>
           </div>
-          <div class="fille__buttons">
-            <button class="button button--delete fille__button">удалить</button>
-            <button class="button button--success button--select-gallery fille__button">Выбрать</button>
+          <div class="file__buttons">
+            <button class="button button--delete file__button">удалить</button>
+            <button class="button button--success button--select-gallery file__button">Выбрать</button>
           </div>
         </div>
       </div>
